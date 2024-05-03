@@ -34,7 +34,6 @@ class MovieDetailsViewController : UIViewController {
         view.addSubview(imageView)
         
         let movieData = MovieUseCase().getDetails(id: 111161)
-        print(movieData)
         
         if let pictureURL = movieData?.imageUrl {
             if let url = URL(string: pictureURL) {
@@ -63,7 +62,12 @@ class MovieDetailsViewController : UIViewController {
         overLayerView.autoPinEdgesToSuperviewEdges()
         
         // NSMutableAttributedString
+<<<<<<< Updated upstream
         titleLabel.text = "movieData?.namemovieData?.namemovieData?.namemovieData?.namemovieData?.namemovieData?.name"
+=======
+        titleLabel.text = movieData?.name
+//        "movieData?.namemovieData?.namemovieData?.namemovieData?.namemovieData?.namemovieData?.name"
+>>>>>>> Stashed changes
         titleLabel.textColor = UIColor.white
         titleLabel.font = UIFont(name: "Helvetica-Bold", size: 20)
         imageView.addSubview(titleLabel)
