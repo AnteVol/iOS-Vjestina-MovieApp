@@ -115,20 +115,10 @@ class MovieCategoriesListController: UIViewController {
 extension MovieCategoriesListController {
     
     func constructHierarchyAndLayout() {
-        let mainScrollView = UIScrollView()
-        mainScrollView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(mainScrollView)
-        mainScrollView.autoPinEdgesToSuperviewEdges()
-        
-        let contentView = UIView()
-        contentView.translatesAutoresizingMaskIntoConstraints = false
-        mainScrollView.addSubview(contentView)
-        contentView.autoPinEdgesToSuperviewEdges()
-        
-        contentView.addSubview(popularScrollView)
+        view.addSubview(popularScrollView)
         popularLabel = UILabel()
         popularLabel?.text = "What's popular"
-        contentView.addSubview(popularLabel!)
+        view.addSubview(popularLabel!)
         popularLabel?.autoPinEdge(toSuperviewSafeArea: .top, withInset: 10)
         popularLabel?.autoPinEdge(toSuperviewEdge: .leading, withInset: 20)
         popularScrollView.autoPinEdge(.top, to: .bottom, of: popularLabel!, withOffset: 10)
@@ -138,10 +128,10 @@ extension MovieCategoriesListController {
         popularStackView.autoPinEdgesToSuperviewEdges()
         addMovies(films: allMovies.popularMovies, stackViewToAdd: popularStackView)
         
-        contentView.addSubview(freeScrollView)
+        view.addSubview(freeScrollView)
         freeLabel = UILabel()
         freeLabel?.text = "Free to Watch"
-        contentView.addSubview(freeLabel!)
+        view.addSubview(freeLabel!)
         freeLabel?.autoPinEdge(.top, to: .bottom, of: popularStackView, withOffset: 20)
         freeLabel?.autoPinEdge(toSuperviewEdge: .leading, withInset: 20)
         freeScrollView.autoPinEdge(.top, to: .bottom, of: freeLabel!, withOffset: 10)
@@ -151,10 +141,10 @@ extension MovieCategoriesListController {
         freeStackView.autoPinEdgesToSuperviewEdges()
         addMovies(films: allMovies.freeToWatchMovies, stackViewToAdd: freeStackView)
         
-        contentView.addSubview(trendingScrollView)
+        view.addSubview(trendingScrollView)
         trendingLabel = UILabel()
         trendingLabel?.text = "Trending"
-        contentView.addSubview(trendingLabel!)
+        view.addSubview(trendingLabel!)
         trendingLabel?.autoPinEdge(.top, to: .bottom, of: freeStackView, withOffset: 20)
         trendingLabel?.autoPinEdge(toSuperviewEdge: .leading, withInset: 20)
         trendingScrollView.autoPinEdge(.top, to: .bottom, of: trendingLabel!, withOffset: 10)
