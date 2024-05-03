@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< Updated upstream
-=======
 		EF0F5B812BB81F5500A087AC /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F5B802BB81F5500A087AC /* MovieDetailsViewController.swift */; };
 		EF0F5B832BB875BA00A087AC /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F5B822BB875BA00A087AC /* FavoriteButton.swift */; };
 		EF9015022BE3D8BD009026EA /* MovieAppData in Frameworks */ = {isa = PBXBuildFile; productRef = EF9015012BE3D8BD009026EA /* MovieAppData */; };
@@ -16,7 +14,6 @@
 		EF9015072BE3DCA5009026EA /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9015062BE3DCA5009026EA /* MovieListViewController.swift */; };
 		EF9015092BE53B0C009026EA /* MovieCategoriesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9015082BE53B0C009026EA /* MovieCategoriesListController.swift */; };
 		EF90150B2BE5693B009026EA /* HeatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90150A2BE5693B009026EA /* HeatButton.swift */; };
->>>>>>> Stashed changes
 		EFB6E6182BB76AA700416C9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6E6172BB76AA700416C9B /* AppDelegate.swift */; };
 		EFB6E61A2BB76AA700416C9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6E6192BB76AA700416C9B /* SceneDelegate.swift */; };
 		EFB6E61C2BB76AA700416C9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6E61B2BB76AA700416C9B /* ViewController.swift */; };
@@ -43,14 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< Updated upstream
-=======
 		EF0F5B802BB81F5500A087AC /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		EF0F5B822BB875BA00A087AC /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		EF9015062BE3DCA5009026EA /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		EF9015082BE53B0C009026EA /* MovieCategoriesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCategoriesListController.swift; sourceTree = "<group>"; };
 		EF90150A2BE5693B009026EA /* HeatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatButton.swift; sourceTree = "<group>"; };
->>>>>>> Stashed changes
 		EFB6E6142BB76AA700416C9B /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB6E6172BB76AA700416C9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB6E6192BB76AA700416C9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,11 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< Updated upstream
-=======
 				EF9015052BE3D8C8009026EA /* PureLayout in Frameworks */,
 				EF9015022BE3D8BD009026EA /* MovieAppData in Frameworks */,
->>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,14 +112,11 @@
 				EFB6E6202BB76AA800416C9B /* Assets.xcassets */,
 				EFB6E6222BB76AA800416C9B /* LaunchScreen.storyboard */,
 				EFB6E6252BB76AA800416C9B /* Info.plist */,
-<<<<<<< Updated upstream
-=======
 				EF0F5B802BB81F5500A087AC /* MovieDetailsViewController.swift */,
 				EF0F5B822BB875BA00A087AC /* FavoriteButton.swift */,
 				EF9015062BE3DCA5009026EA /* MovieListViewController.swift */,
 				EF9015082BE53B0C009026EA /* MovieCategoriesListController.swift */,
 				EF90150A2BE5693B009026EA /* HeatButton.swift */,
->>>>>>> Stashed changes
 			);
 			path = MovieApp;
 			sourceTree = "<group>";
@@ -150,11 +138,8 @@
 			);
 			name = MovieApp;
 			packageProductDependencies = (
-<<<<<<< Updated upstream
-=======
 				EF9015012BE3D8BD009026EA /* MovieAppData */,
 				EF9015042BE3D8C8009026EA /* PureLayout */,
->>>>>>> Stashed changes
 			);
 			productName = MovieApp;
 			productReference = EFB6E6142BB76AA700416C9B /* MovieApp.app */;
@@ -229,13 +214,10 @@
 			);
 			mainGroup = EFB6E60B2BB76AA700416C9B;
 			packageReferences = (
-<<<<<<< Updated upstream
 				EF9014FE2BE3D6E0009026EA /* XCRemoteSwiftPackageReference "PureLayout" */,
 				EF9014FF2BE3D6EC009026EA /* XCRemoteSwiftPackageReference "MovieAppData" */,
-=======
 				EF9015002BE3D8BD009026EA /* XCRemoteSwiftPackageReference "MovieAppData" */,
 				EF9015032BE3D8C8009026EA /* XCRemoteSwiftPackageReference "PureLayout" */,
->>>>>>> Stashed changes
 			);
 			productRefGroup = EFB6E6152BB76AA700416C9B /* Products */;
 			projectDirPath = "";
@@ -280,15 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< Updated upstream
 				EFB6E61C2BB76AA700416C9B /* ViewController.swift in Sources */,
-=======
 				EF9015092BE53B0C009026EA /* MovieCategoriesListController.swift in Sources */,
 				EF90150B2BE5693B009026EA /* HeatButton.swift in Sources */,
 				EF0F5B812BB81F5500A087AC /* MovieDetailsViewController.swift in Sources */,
 				EF9015072BE3DCA5009026EA /* MovieListViewController.swift in Sources */,
 				EF0F5B832BB875BA00A087AC /* FavoriteButton.swift in Sources */,
->>>>>>> Stashed changes
 				EFB6E6182BB76AA700416C9B /* AppDelegate.swift in Sources */,
 				EFB6E61A2BB76AA700416C9B /* SceneDelegate.swift in Sources */,
 			);
@@ -630,9 +609,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-<<<<<<< Updated upstream
 		EF9014FE2BE3D6E0009026EA /* XCRemoteSwiftPackageReference "PureLayout" */ = {
-=======
 		EF9015002BE3D8BD009026EA /* XCRemoteSwiftPackageReference "MovieAppData" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/fiveagency/MovieAppData";
@@ -642,7 +619,6 @@
 			};
 		};
 		EF9015032BE3D8C8009026EA /* XCRemoteSwiftPackageReference "PureLayout" */ = {
->>>>>>> Stashed changes
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/PureLayout/PureLayout.git";
 			requirement = {
@@ -650,7 +626,6 @@
 				minimumVersion = 3.0.0;
 			};
 		};
-<<<<<<< Updated upstream
 		EF9014FF2BE3D6EC009026EA /* XCRemoteSwiftPackageReference "MovieAppData" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/fiveagency/MovieAppData";
@@ -660,7 +635,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-=======
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -675,7 +649,6 @@
 			productName = PureLayout;
 		};
 /* End XCSwiftPackageProductDependency section */
->>>>>>> Stashed changes
 	};
 	rootObject = EFB6E60C2BB76AA700416C9B /* Project object */;
 }
