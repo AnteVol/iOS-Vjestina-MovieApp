@@ -29,8 +29,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let lc = MovieListViewController()
          let window = UIWindow(windowScene: windowScene)
         
- //        window.rootViewController = UINavigationController(rootViewController: lc)
-       window.rootViewController = NavigationBar()
+         window.rootViewController = UINavigationController(rootViewController: lc)
+//       window.rootViewController = NavigationBar()
          self.window = window
          window.makeKeyAndVisible()
     }

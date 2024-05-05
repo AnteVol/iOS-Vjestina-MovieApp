@@ -65,7 +65,7 @@ extension MovieListViewController: UICollectionViewDelegate {
         appearance.backgroundColor = .white
         navigationController.navigationBar.standardAppearance = appearance
         
-        let backButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(backButtonTapped))
+        let backButton = UIBarButtonItem(title: "< Movie List", style: .plain, target: self, action: #selector(backButtonTapped))
         movieDetailsViewController.navigationItem.leftBarButtonItem = backButton
         
         present(navigationController, animated: true, completion: nil)
