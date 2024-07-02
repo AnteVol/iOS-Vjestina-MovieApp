@@ -1,9 +1,8 @@
-import Foundation
 import UIKit
-import MovieAppData
 import PureLayout
+import MovieAppData
 
-class MovieDetailsViewController: UIViewController {
+class MovieDetailsViewController1: UIViewController {
     
     var imageView = UIImageView()
     let systemSize = UIScreen.main.bounds
@@ -194,31 +193,31 @@ class MovieDetailsViewController: UIViewController {
                 stackView.axis = .horizontal
                 stackView.alignment = .fill
                 stackView.distribution = .fillEqually
+               
                 stackView.spacing = 10
                 
                 for _ in 0..<numberOfCrewMembersPerRow {
-                        let roleLabel = UILabel()
-                        roleLabel.font = UIFont(name: "Helvetica", size: 12)
-                        roleLabel.textAlignment = .left
-                        
-                        let nameLabel = UILabel()
-                        
-                        nameLabel.font = UIFont(name: "Helvetica-Bold", size: 13)
-                        nameLabel.textAlignment = .center
+                    let roleLabel = UILabel()
+                    roleLabel.font = UIFont(name: "Helvetica", size: 12)
+                    roleLabel.textAlignment = .left
                     
-                        if count < crewMembers.count {
-                            let member = crewMembers[count]
-                            nameLabel.text = member.name
-                            roleLabel.text = member.role
-                        }
-                        let memberStackView = UIStackView(arrangedSubviews: [nameLabel, roleLabel])
-                        memberStackView.axis = .vertical
-                        memberStackView.alignment = .leading
-                        memberStackView.distribution = .fillEqually
-                        
-                        stackView.addArrangedSubview(memberStackView)
-                        
-                        count += 1
+                    let nameLabel = UILabel()
+                    nameLabel.font = UIFont(name: "Helvetica-Bold", size: 13)
+                    nameLabel.textAlignment = .center
+                    
+                    if count < crewMembers.count {
+                        let member = crewMembers[count]
+                        nameLabel.text = member.name
+                        roleLabel.text = member.role
+                    }
+                    let memberStackView = UIStackView(arrangedSubviews: [nameLabel, roleLabel])
+                    memberStackView.axis = .vertical
+                    memberStackView.alignment = .leading
+                    memberStackView.distribution = .fillEqually
+                    
+                    stackView.addArrangedSubview(memberStackView)
+                    
+                    count += 1
                 }
                 viewForStackView.addSubview(stackView)
                 if(count == 3){
@@ -236,8 +235,8 @@ class MovieDetailsViewController: UIViewController {
         descriptionLabel.transform = descriptionLabel.transform.translatedBy(x: -view.frame.width, y: 0)
         viewForStackView.alpha = 0
     }
-
-
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -254,20 +253,20 @@ class MovieDetailsViewController: UIViewController {
                     animations: {
                         self.viewForStackView.alpha = 1.0
             })
-    })
-}
-
-func durationToHourAndMin(durationInMinutes: Int) -> (hours: Int, minutes: Int) {
-    let hours = durationInMinutes / 60
-    let minutes = durationInMinutes % 60
-    return (hours, minutes)
-}
-
-override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-    return .portrait
-}
-
-override var shouldAutorotate: Bool {
-    return false
-}
+        })
+    }
+    
+    func durationToHourAndMin(durationInMinutes: Int) -> (hours: Int, minutes: Int) {
+        let hours = durationInMinutes / 60
+        let minutes = durationInMinutes % 60
+        return (hours, minutes)
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
 }

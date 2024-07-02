@@ -11,6 +11,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    lazy var navigationController = UINavigationController()
+    lazy var router = Router(navigationController: navigationController)
 
 //    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 //       
@@ -18,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        
 //        window = UIWindow(windowScene: windowScene)
 ////        let vc = MovieDetailsViewController()
-//        let lc = MovieListViewController()
+////        let lc = MovieListViewController()
 ////        let cl = MovieCategoriesListController()
 //        let nb = NavigationBar()
 //        window?.rootViewController = nb
@@ -26,14 +28,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //    }
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        let lc = MovieListViewController()
-         let window = UIWindow(windowScene: windowScene)
         
-         window.rootViewController = UINavigationController(rootViewController: lc)
-//       window.rootViewController = NavigationBar()
-         self.window = window
-         window.makeKeyAndVisible()
+        window = UIWindow(windowScene: windowScene)
+        
+        guard let window else { return }
+    
+    router.start(in: window)
     }
+//    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+//        guard let windowScene = (scene as? UIWindowScene) else { return }
+//
+//        let window = UIWindow(windowScene: windowScene)
+//        window.backgroundColor = .white
+//
+//        let movieListVC = MovieListViewController1()
+//        let navigationController = UINavigationController(rootViewController: movieListVC)
+//        
+//        window.rootViewController = navigationController
+//
+//        window.makeKeyAndVisible()
+//        self.window = window
+//    }
 
 
 

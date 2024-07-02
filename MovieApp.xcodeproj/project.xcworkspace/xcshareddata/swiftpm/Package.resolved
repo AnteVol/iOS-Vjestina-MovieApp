@@ -1,6 +1,15 @@
 {
-  "originHash" : "58a20b1d07c9a887bd8326793133325aa4e08925b8d0fb67e29df601a8d5a95d",
+  "originHash" : "400ab0695be7e094173265eb579ace7433bba03b2c7f6e8fc3184ce8dbd06912",
   "pins" : [
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher",
+      "state" : {
+        "revision" : "5b92f029fab2cce44386d28588098b5be0824ef5",
+        "version" : "7.11.0"
+      }
+    },
     {
       "identity" : "movieappdata",
       "kind" : "remoteSourceControl",

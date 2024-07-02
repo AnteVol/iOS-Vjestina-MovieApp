@@ -3,10 +3,23 @@ import MovieAppData
 import PureLayout
 
 class MovieCategoriesListController: UIViewController {
+    
+    let router: Router
+    
     let allMovies = MovieAppData.MovieUseCase()
     var popularLabel : UILabel?
     var freeLabel : UILabel?
     var trendingLabel : UILabel?
+    
+    init(router: Router) {
+        self.router = router
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     lazy var popularStackView: UIStackView = {
         let stackView = UIStackView()
@@ -100,19 +113,7 @@ class MovieCategoriesListController: UIViewController {
             let movieID = imageView.tag
             print("Image tapped with ID: \(movieID)")
 
-            let movieDetailsViewController = MovieDetailsViewController(movieID: movieID)
-            let navigationController = UINavigationController(rootViewController: movieDetailsViewController)
-            
-            let appearance = UINavigationBarAppearance()
-            appearance.backgroundColor = .white
-            
-            navigationController.modalPresentationStyle = .fullScreen
-            navigationController.navigationBar.standardAppearance = appearance
-            
-            let backButton = UIBarButtonItem(title: "< Movie List", style: .plain, target: self, action: #selector(backButtonTapped))
-            movieDetailsViewController.navigationItem.leftBarButtonItem = backButton
-
-            present(navigationController, animated: true, completion: nil)
+            router.showMovieDetails(movieId: movieID)
         }
     }
 
